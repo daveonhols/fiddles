@@ -1,0 +1,19 @@
+.pass-button {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-left: -5px;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.bigbull {
+  font-size: 32px;
+  padding-left: 2.8px;
+}
+
+.down {
+  margin-top: 8px;
+}
