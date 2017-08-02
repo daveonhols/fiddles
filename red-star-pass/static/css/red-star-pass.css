@@ -17,3 +17,23 @@
 .down {
   margin-top: 8px;
 }
+
+.result-panel {
+  width: 40%
+}
+
+.code {
+  font-family: Consolas;
+}
+
+.about-box {
+  border: 1px grey dashed;
+  padding: 10px;
+}
+
+.bordered {
+  border: 1px grey solid;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
