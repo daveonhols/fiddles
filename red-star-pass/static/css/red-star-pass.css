@@ -1,0 +1,39 @@
+.pass-button {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -1px;
+  margin-left: -5px;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.bigbull {
+  font-size: 32px;
+  padding-left: 2.8px;
+}
+
+.down {
+  margin-top: 8px;
+}
+
+.result-panel {
+  width: 40%
+}
+
+.code {
+  font-family: Consolas;
+}
+
+.about-box {
+  border: 1px grey dashed;
+  padding: 10px;
+}
+
+.bordered {
+  border: 1px grey solid;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}

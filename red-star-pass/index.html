@@ -1,0 +1,86 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/red-star-pass.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="static/js/red-star-pass.js"></script>
+
+</head>
+<body>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="text-center">
+            <h1>red-star-pass</h1>
+            <h4>Bootstrap proof of concept for an advanced password input mechanism.</h4>
+            <h4>Clicking icons will add them to the start of your password.  Click added icons to remove them.</h4>
+            <form class="form-inline down bordered">
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <br>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <br>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <br>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <br>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button">-</button>
+                <button type="button" class="btn btn-default pass-button"> </button>
+                <br>
+
+                <div class="form-group down">
+                    <div class="input-group">
+                        <span class="input-group-addon input-glyphs input-sizing empty"><span class="bigbull">&bull;</span></span><!--
+                        --><span class="input-group-addon input-glyphs input-sizing empty"><span class="bigbull">&bull;</span></span><!--
+                        --><span class="input-group-addon input-glyphs input-sizing empty"><span class="bigbull">&bull;</span></span><!--
+                        --><input type="password" class="form-control input-lg" id="password-input" placeholder="password">
+                    </div>
+                    <button type="button" id="password-submit" class="btn btn-lg btn-primary">Submit</button>
+                    <div class="panel panel-default down"><div class="panel-heading">Password bytes</div>
+                        <div id = "password-show" class="code panel-body">
+                            []
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="container text-left down">
+                <row>
+                    <div class="about-box col-lg-2 col-md-2 col-md-offset-3 col-lg-offset-3" >
+                        <p>Users can choose up to three custom glyphs to pre-prend to their password to increase entropy and defeat dictionary driven attacks.</p>
+                    </div>
+                    <div class="about-box col-lg-2 col-md-2 ">
+                        <p>Glyphs are mapped to non-printable ASCII bytes in the range 1-21 and should be salted and hashed on the server side in the usual way.</p>
+                    </div>
+                    <div class="about-box col-lg-2 col-md-2">
+                        <p>Enhancements include shuffling of the input glyphs to defeat click point analysis and show / reveal functionality to defeat screen shot attacks.</p>
+                    </div>
+                </row>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
