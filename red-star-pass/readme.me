@@ -1,0 +1,10 @@
+Simple proof of concept for an enhanced password input control.
+Allows users to include icons in their passwords to increase entropy and defeat dictionary based password cracking attempts.
+The implementation maps each individual icon to a non printable ASCII char, the intention being this will integrate transparently with back end frameworks.
+Using buttons for inputs also helps frustrate keystroke logging password attacks.
+As a proof of concept, the raw password bytes are written to the screen on submit, in reality the corresponding string should be sent to the back end for salting and hashing in the usual way.
+
+Written leveraging modern ES2016 JS features, with babel translation for compatibility.
+Uses JQuery and Bootstrap and is linted for enhanced code quality.
+
+run "npm run build" to create babel output then open index.html
